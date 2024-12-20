@@ -32,7 +32,7 @@ jobs:
           if [ -n "$CHANGED_FILES" ]; then
             echo "Validating JSON files: $CHANGED_FILES"
             ## osv-linter doesn't return error code for invalid JSON. So we should handle this case.
-            output=$(./osv-linter record lint vulns/AQUA-2024-0001.json 2>&1 || true)
+            output=$(./osv-linter record lint $CHANGED_FILES 2>&1 || true)
             if [ -n "$output" ]; then
               echo "$output"
               exit 1
