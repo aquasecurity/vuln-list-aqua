@@ -3,7 +3,7 @@
   "id": "GHSA-9qr9-h5gf-34mp",
   "modified": "2025-12-04T20:07:06Z",
   "published": "2025-12-03T19:07:11Z",
-  "aliases": [
+  "upstream": [
     "CVE-2025-55182"
   ],
   "summary": "Next.js is vulnerable to RCE in React flight protocol",
@@ -168,6 +168,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/vercel/next.js"
+    },
+    {
+      "type": "REPORT",
+      "url": "https://github.com/aquasecurity/trivy-db/issues/597"
     }
   ]
 }
